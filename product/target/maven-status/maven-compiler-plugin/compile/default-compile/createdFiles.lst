@@ -1,0 +1,10 @@
+book/AbstractEvent$1.class
+book/AbstractEvent.class
+book/Product.class
+book/Canceled.class
+book/config/kafka/KafkaProcessor.class
+book/ProductRepository.class
+book/Delivered.class
+book/PolicyHandler.class
+book/ProductController.class
+book/ProductApplication.class
