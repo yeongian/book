@@ -10,6 +10,9 @@ import org.springframework.stereotype.Service;
 
 @Service
 public class PolicyHandler{
+    @Autowired
+    ReservationRepository reservationRepository;
+
     @StreamListener(KafkaProcessor.INPUT)
     public void onStringEventListener(@Payload String eventString){
 
@@ -27,6 +30,12 @@ public class PolicyHandler{
 
         if(delivered.isMe()){
             System.out.println("##### listener  : " + delivered.toJson());
+            //
+            Reservation reservation = reservationRepository.findById(delivered.getOrderId()).get();
+
+            reservation.setStatusCode(2);
+
+            reservationRepository.save(reservation);
         }
     }
 
