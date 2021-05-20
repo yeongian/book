@@ -1,4 +1,4 @@
-![image](https://user-images.githubusercontent.com/82552044/118928894-cb22b780-b97e-11eb-9e4a-c6db6be72633.jpg)
+![image](https://user-images.githubusercontent.com/82552044/118929245-3a001080-b97f-11eb-83d8-e279fce678bf.jpg)
 
 # 책대여 시스템
 
